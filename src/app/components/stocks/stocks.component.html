@@ -1,0 +1,18 @@
+<div>
+  Day {{ dayNumber }}
+<button (click)="nextDay()">Pass Day</button>
+
+<div class="stocks" *ngFor="let stock of stocks">
+  <div>
+      <span class="symbol">{{ stock.symbol }}</span>
+  <span class="name">{{ stock.name }}</span>
+  <span class="price">{{ stock.price }}</span>
+  <span class="percentage">{{ roundNumber(stock.price + (dayNumber * (( stock.change * stock.price ) / 100)))  }}</span>
+  <span class="change">{{ stock.change }}%</span>
+</div>
+</div>
+
+
+Day as {{ todayDate | date:'MMMM d, y' }}
+</div>
+

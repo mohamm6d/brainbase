@@ -1,0 +1,16 @@
+/* You can add global styles to this file, and also import other style files */
+.stocks{
+    display:block;
+    width: 100%;
+    font-size: 11px;
+}.stocks
+    div{
+        width:100%;
+        display: grid;
+        grid-template-columns: repeat(5,20%);
+    }
+    .stocks   span{
+        padding:10px;
+        background-color: #eee;
+        border-bottom: 1px solid #ccc;
+    }
